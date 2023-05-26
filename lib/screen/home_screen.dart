@@ -63,6 +63,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Listener(
         onPointerSignal: (PointerSignalEvent event) {
+          // mouse scroll then page will change           
           if (event is PointerScrollEvent) {
             if (event.scrollDelta.dy > 0) {
               _scrollToNextPage();
